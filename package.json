@@ -1,0 +1,47 @@
+{
+  "name": "duckduckjs",
+  "version": "1.0.0",
+  "description": "AI chat and search for text, using the DuckDuckGo.com search engine.",
+  "keywords": [
+    "duckduckgosearch",
+    "duckduckgojs",
+    "duckduckjs",
+    "duckduckgo",
+    "duckchat"
+  ],
+  "homepage": "https://github.com/RajDave-Dev/DuckDuckJS#readme",
+  "bugs": {
+    "url": "https://github.com/RajDave-Dev/DuckDuckJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajDave-Dev/DuckDuckJS.git"
+  },
+  "license": "GPL-3.0-only",
+  "author": "RajDave-Dev",
+  "type": "module",
+  "main": "dist/cjs/duckduck.js",
+  "module": "dist/esm/duckduck.js",
+  "types": "dist/types/duckduck.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/types/duckduck.d.ts",
+      "import": "./dist/esm/duckduck.js",
+      "require": "./dist/cjs/duckduck.js"
+    }
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "dependencies": {
+    "linkedom": "^0.18.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "typescript": "^5.8.2"
+  }
+}
