@@ -1,6 +1,6 @@
 {
   "name": "duckduckjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI chat and search for text, using the DuckDuckGo.com search engine.",
   "keywords": [
     "duckduckgosearch",
